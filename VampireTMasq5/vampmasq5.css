@@ -1,0 +1,41 @@
+/* Generic header */
+
+.sheet-rolltemplate-5eDefault .sheet-rt-header {
+	text-align: center;
+	position: relative;
+	color: #fff;
+	margin: 0 -10px 10px -10px;
+	padding: 5px 0;
+	background-color: #5c5c5c;
+	background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+	-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, .3);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, .3);
+}
+
+.sheet-rolltemplate-5eDefault .sheet-rt-header:before,
+.sheet-rolltemplate-5eDefault .sheet-rt-header:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: transparent;
+	bottom: -10px;
+}
+
+.sheet-rolltemplate-5eDefault .sheet-rt-header:before {
+	border-width: 0 10px 10px 0;
+	border-right-color: #222;
+	left: 0;
+}
+
+.sheet-rolltemplate-5eDefault .sheet-rt-header:after {
+	border-width: 0 0 10px 10px;
+	border-left-color: #222;
+	right: 0;
+}
+
+.sheet-rolltemplate-5eDefault .sheet-rt-title {
+	font-size: 1.5em;
+}
+
+.sheet-rolltemplate-5eDefault .sheet-rt-subheader {}
