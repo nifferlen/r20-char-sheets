@@ -1,0 +1,36 @@
+<body>
+    <div>
+        <button type="action" name="act_character" >Character</button>
+        <button type="action" name="act_spells" >Spells</button>
+        <button type="action" name="act_potions" >Potions</button>
+        <button type="action" name="act_journal" >Journal</button>
+    </div>
+    <input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='character'  />
+    
+    <div class='sheet-character'>
+        <h2>Character</h2>
+        <span>character Stuff Goes here </span>
+    </div>
+    <div class='sheet-spells'>
+        <h2>Spells</h2>
+        <span>Spells are noted here</span> 
+    </div>
+    <div class='sheet-potions'>
+        <h2>Potions</h2>
+        <span>Potions are noted here</span> 
+    </div>
+    <div class='sheet-journal'>
+        <h2>Journal</h2>
+        <span>Journal and notes go here</span>
+    </div>
+    
+    <script type="text/worker">
+        const buttonlist = ["character","spells","potions","journal"];
+        buttonlist.forEach(button => {
+            on(`clicked:${button}`, function() {
+                setAttrs({
+                    sheetTab: button
+                });
+            });
+        });
+    </script>
