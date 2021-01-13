@@ -1,0 +1,20 @@
+import url('https://fonts.googleapis.com/css2?family=Italianno&family=Raleway&display=swap');
+
+.charsheet {
+    background-color: f5e5c9
+    font-family: 'Italianno', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+.sheet-character,
+.sheet-config,
+.sheet-journal {
+    display: none;
+}
+
+/* show the selected tab */
+.sheet-tabstoggle[value="character"] ~ div.sheet.character,
+.sheet-tabstoggle[value="spells"] ~ div.sheet.spells,
+.sheet-tabstoggle[value="potions"] ~ div.sheet.potions,
+.sheet-tabstoggle[value="journal"] ~ div.sheet.journal {
+    display: block;
+}
